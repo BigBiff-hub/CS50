@@ -1,0 +1,12 @@
+
+sort1 uses: Bubble sort
+
+How do you know?: on the sorted10000.txt it completed alot quicker than selection sort 
+
+sort2 uses: MergeSort
+
+How do you know?: on random10000.txt it gave me a time of 0.019s which was the quickest 
+
+sort3 uses: Selection sort
+
+How do you know?: performed slower than bubble sort on data that is already sorted  
