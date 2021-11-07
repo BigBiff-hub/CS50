@@ -1,0 +1,50 @@
+p {
+  text-align: center;
+  color: black;
+}
+header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+footer{
+
+    font-size: 11px;
+    
+    border-top: 5px solid #9AA3D2;
+    padding-top: 15px;
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+}
+
+  
+}
+h3 {
+  text-decoration: underline;
+}
+.images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 75%;
+  
+}
+#cointable{
+  padding: 25px 50px;
+  border: 1px solid black;
+  
+}
+tr {
+  background-color: #04AA6D;
+  color: white;
+}
+body
+{
+    background-color:#6AA4D8;
+}
+a{
+  text-align: center;
+ 
+}

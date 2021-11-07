@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src = "script.js"></script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+         <div class="container">
+             <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blockchain.html">Blockchain</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="solidarity.html">Solidity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Crypto.html">Crypto</a>
+                </li>
+            </ul>
+      <main class= "container-fluid">
+        <h1>What is Cryptocurrency?</h1>
+        <img src = "CRYPTO.jpg", alt="Crypto coins" width="104" height="142" class = "images">
+        <p>A cryptocurrency, crypto-currency, or crypto is a binary data designed to work as a
+        medium of exchange wherein individual coin ownership records are stored in a ledger existing in a
+        form of a computerized database using strong cryptography to secure transaction records, to
+        control the creation of additional coins, and to verify the transfer of coin ownership.
+        Some crypto schemes use validators to maintain the cryptocurrency. In a proof-of-stake model, owners put up their tokens as collateral. In return,
+        they get authority over the token in proportion to the amount they stake.
+        Generally, these token stakers get additional ownership in the token over time via network fees,
+        newly minted tokens or other such reward mechanisms</p>
+        <button onclick = "revealCreator()">Who created Ethereum?</button>
+        <p id = "hiddencreator" style  = "display:none">Vitalik Buterin</p>
+
+        <h3 class = "about" >List of Cryptocurrencies</h3>
+        <ul>
+            <li>Bitcoin</li>
+            <li>Ethereum</li>
+            <li>Ripple</li>
+            <li>Cardano</li>
+            <li>Litecoin</li>
+        </ul>
+
+        <table id = "cointable">
+          <tr:nth-child(even) {background-color: #f2f2f2;}>
+            <th>Coin</th>
+            <th>Market Cap</th>
+
+          </tr>
+          <tr>
+            <td>Bitcoin</td>
+            <td>$97.83 B</td>
+
+          </tr>
+          <tr>
+            <td>Ethereum</td>
+            <td>$14.02 B</td>
+
+          </tr>
+          <tr>
+            <td>Ripple</td>
+            <td>$14.02 B</td>
+
+          </tr>
+          <tr>
+            <td>Cardano</td>
+            <td>$13.8 B</td>
+
+          </tr>
+          <tr>
+            <td>Litecoin</td>
+            <td>$12.02 B</td>
+
+          </tr>
+        </table>
+        </main>
+    </body>
+</html>
