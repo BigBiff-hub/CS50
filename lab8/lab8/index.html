@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+
+                let correct_answer = document.querySelector("#correct");
+                let incorrect_answer = document.querySelectorAll(".incorrect");
+                let message = document.querySelector("#message");
+                correct_answer.addEventListener('click', function(){
+                    correct_answer.style.backgroundColor = 'green';
+                    console.log('event for correct answer')
+                    message.innerHTML = "Correct!"
+
+                });
+                for(let i = 0; i < incorrect_answer.length; i++)
+                {
+                    incorrect_answer[i].addEventListener('click', function(){
+                    incorrect_answer[i].style.backgroundColor = 'red';
+                    //console.log('event for wrong answer');
+                    message.innerHTML = "Incorrect!";
+                });
+                }
+                 document.querySelector("#p2-button").addEventListener('click', function(){
+                     //console.log('part 2 response');
+                     let input = document.querySelector("input");
+                     let message_p2 = document.querySelector("#p2-message");
+                     if (input.value == "Vincent Roche")
+                     {
+                         //console.log("You have the right answer");
+                         input.style.color = "green";
+                         message_p2.innerHTML = "Correct!";
+                         
+                     }
+                     else
+                     {
+                         //console.log("Try again ");
+                         input.style.color = "red";
+                         message_p2.innerHTML = "Incorrect!";
+                     }
+                 })
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the captital of Ireland??</h3>
+                <button class="incorrect">Wexford</button>
+                <button class="incorrect">Limerick</button>
+                <button class="incorrect">Cork</button>
+                <button id = "correct">Dublin</button>
+                <button class="incorrect">Kilkenny</button>
+                <p id = "message"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>Who is the CEO of Analog Devices?</h3>
+                <input type = "text">
+                <button id = "p2-button">Check Answer</button>
+                <p id = "p2-message"></p>
+            </div>
+
+        </div>
+    </body>
+</html>
