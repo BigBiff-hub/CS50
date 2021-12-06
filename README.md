@@ -18,4 +18,5 @@ Look at pset7 and lab7
 ## Week 8 : HTML, CSS, Javascript
 Look at pset8 and lab8
 ## Week 9 : Web Applications
+Look at finance and lab9
 
